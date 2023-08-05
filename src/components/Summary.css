@@ -1,0 +1,60 @@
+.summary {
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+}
+
+.summary-plans {
+    width: 100%;
+    padding: 1.1rem 1.2rem;
+    background-color: var(--alabaster);
+    border-radius: 7px;
+
+    display: grid;
+    gap: 1rem;
+}
+
+.summary-plan__level,
+.summary-add-ons,
+.total-card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.summary-plan__add-ons {
+    display: grid;
+    gap: 1rem;
+}
+
+.summary-plan__main .title {
+    font-size: 1rem;
+}
+
+.total-card {
+    padding: 1rem 1.2rem;
+}
+
+.summary-add-ons .sub{
+    font-size: .9rem;
+}
+
+.change {
+    text-decoration: underline;
+    font-size: .9rem;
+    font-weight: var(--weight-md);
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+.summary-add-ons-price {
+    color: var(--marine-blue);
+    font-weight: var(--weight-md);
+}
+
+.total {
+    font-size: 1.1rem;
+    font-weight: var(--weight-lg);
+    color: var(--purplish-blue);
+}

@@ -1,0 +1,50 @@
+.add-ons {
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: start;
+    gap: 1rem;
+}
+
+.adds {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+
+    border-radius: 6px;
+    border: 1px solid var(--cool-gray);
+    cursor: pointer;
+    user-select: none;
+}
+
+.addd-prie {
+    margin-left: auto;
+    color: var(--purplish-blue);
+    font-weight: var(--weight-md);
+}
+
+.adds-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .2rem;
+}
+
+.adds-info .tile {
+    font-weight: var(--weight-md);
+    color: var(--marine-blue);
+}
+
+.adds-info .sub {
+    font-size: .9rem;
+}
+
+.add-ons input {
+    width: 1rem;
+    height: 1rem;
+}

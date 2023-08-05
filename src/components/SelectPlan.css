@@ -1,0 +1,125 @@
+.select-plan {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.plans {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.card {
+    padding: 1.2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: .3em;
+
+    border: 2px solid var(--cool-gray);
+    border-radius: 8px;
+    flex: 1;
+    flex-grow: 1;
+    cursor: pointer;
+    user-select: none;
+    transition: all .3s ease;
+}
+
+.card:hover {
+    border-color: var(--purplish-blue) !important;
+}
+
+.plan-icon {
+    margin-bottom: 2.5rem;
+}
+
+.span-label {
+    font-weight: var(--weight-md);
+}
+
+.span-toggle {
+    width: 100%;
+    background-color: var(--alabaster);
+    border-radius: 7px;
+    color: var(--cool-gray);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-block: .8rem;
+}
+
+.toggle-btn {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    background-color: var(--marine-blue);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.toggle-circle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    /* left: 5px; */
+
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--white);
+}
+
+.free {
+    color: var(--marine-blue);
+    font-size: .8375rem;
+}
+
+.plan-infos {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+
+@media (max-width: 800px) {
+    .plans {
+        flex-direction: column;
+    }
+    .card {
+        width: 100%;
+        padding: .7rem 1rem;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        gap: 1rem;
+    }
+    .plan-infos {
+        flex-direction: row;
+        gap: .5rem;
+    }
+    .plan-icon {
+        margin: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .select-plan {
+        gap: 1rem;
+    }
+    .plan-infos {
+        flex-direction: column;
+    }
+    .card {
+        padding: .7rem;
+        align-items: start;
+    }
+}

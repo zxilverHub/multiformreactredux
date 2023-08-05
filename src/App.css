@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+:root {
+  --marine-blue: hsl(213, 96%, 18%);
+  --purplish-blue: hsl(243, 100%, 62%);
+  --pastel-blue: hsl(228, 100%, 84%);
+  --light-blue: hsl(206, 94%, 87%);
+  --strawberry-red: hsl(354, 84%, 57%);
+
+  --cool-gray: hsl(231, 11%, 63%);
+  --light-gray: hsl(229, 24%, 87%);
+  --magnolia: hsl(217, 100%, 97%);
+  --alabaster: hsl(231, 100%, 99%);
+  --white: hsl(0, 0%, 100%);
+
+  --text: 1rem;
+
+  --weight-sm: 400;
+  --weight-md: 500;
+  --weight-lg: 700;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--magnolia);
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: var(--weight-sm);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#root {
+  position: relative;
+  width: 950px;
+  height: 550px;
+  padding: 1rem;
+  background-color: var(--white);
+  box-shadow: 0 0 15px var(--magnolia), 0 10px 30px var(--light-gray);
+  border-radius: 10px;
+
+  display: flex;
+  gap: 2rem;
+}
+
+.forms {
+  width: calc(100% - 250px - 2rem);
+  padding: 2rem 4rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 2rem ;
+}
+
+.title {
+  font-weight: var(--weight-lg);
+  color: var(--marine-blue);
+}
+
+.sub {
+  color: var(--cool-gray);
+}
+
+@media (max-width: 900px) {
+  #root {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .forms { padding: 2rem; }
+}
+
+@media (max-width: 600px) {
+  #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    background-color: transparent;
+    gap: 0;
+  }
+  .forms {
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 95%;
+    padding: 1.3rem;
+
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 5px 20px var(--cool-gray);
+  }
+}

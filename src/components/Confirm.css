@@ -1,0 +1,36 @@
+.confirm {
+    width: calc(100% - 250px - 2rem);
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+}
+
+.confirm p {
+    max-width: 48ch;
+    line-height: 1.4;
+}
+
+.confirm .title {
+    margin-top: .5rem;
+    font-size: 2rem;
+}
+
+@media (max-width: 600px) {
+    .confirm {
+        position: absolute;
+        top: 90px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 95%;
+        padding: 3rem 1rem;
+        height: auto;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 0 20px var(--cool-gray);
+    }
+}
